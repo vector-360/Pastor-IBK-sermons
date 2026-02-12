@@ -1,0 +1,433 @@
+/* =========================
+   GLOBAL RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #222;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+section {
+    padding: 80px 10%;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background: #111;
+    color: white;
+    position: relative;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.nav-links li a:hover,
+.active-link {
+    color: #f4c542;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(to right, #111, #333);
+    color: white;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.hero-content {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.hero-content p {
+    margin-bottom: 25px;
+    font-size: 18px;
+}
+
+.bible-quote {
+    margin-top: 20px;
+    font-style: italic;
+    color: #f4c542;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    background: #111;
+    color: white;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #f4c542;
+    color: #111;
+}
+
+.btn.small {
+    padding: 8px 18px;
+    font-size: 14px;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-image {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+}
+
+.about-text {
+    flex: 1;
+    min-width: 280px;
+}
+
+.about-text h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 15px;
+    color: #555;
+}
+
+/* =========================
+   SERMONS PAGE
+========================= */
+
+.sermons-page {
+    text-align: center;
+}
+
+.sermon-header {
+    margin-bottom: 40px;
+}
+
+.sermon-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+/* SEARCH */
+
+.search-bar {
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    width: 60%;
+    max-width: 400px;
+    padding: 12px 20px;
+    border-radius: 30px;
+    border: 1px solid #ccc;
+}
+
+/* FILTER BUTTONS */
+
+.filter-buttons {
+    margin-bottom: 40px;
+}
+
+.filter-btn {
+    padding: 10px 25px;
+    margin: 5px;
+    border: 1px solid #111;
+    background: transparent;
+    cursor: pointer;
+    border-radius: 30px;
+    transition: 0.3s ease;
+}
+
+.filter-btn:hover {
+    background: #111;
+    color: white;
+}
+
+.filter-btn.active {
+    background: #111;
+    color: white;
+}
+
+/* SERMON GRID */
+
+.sermon-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 40px;
+    padding: 0 10%;
+}
+
+/* SERMON CARD */
+
+.sermon-item {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.sermon-item:hover {
+    transform: translateY(-5px);
+}
+
+.sermon-item h3 {
+    margin-top: 15px;
+}
+
+.date {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+.tags span {
+    background: #f4f4f4;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin-right: 5px;
+}
+
+/* VIDEO RESPONSIVE */
+
+.media-wrapper {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.media-wrapper iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+.sermon-item audio {
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* =========================
+   SERMON DETAIL PAGE
+========================= */
+
+.detail-page {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.detail-page h2 {
+    margin-bottom: 10px;
+}
+
+.detail-page .description {
+    margin-top: 20px;
+    color: #555;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px 10% 30px;
+    margin-top: 80px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.footer h3 {
+    margin-bottom: 10px;
+}
+
+.footer p {
+    color: #ccc;
+    font-size: 14px;
+}
+
+.footer-social a {
+    margin-right: 15px;
+    font-size: 18px;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.footer-social a:hover {
+    color: #f4c542;
+    transform: translateY(-3px);
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+
+@media (max-width: 768px) {
+
+    section {
+        padding: 60px 20px;
+    }
+
+    /* NAVBAR */
+
+    .menu-toggle {
+        display: block;
+        color: white;
+    }
+
+    .nav-links {
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #111;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+        display: none;
+        padding: 20px 0;
+    }
+
+    .nav-links li {
+        margin: 15px 0;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    /* HERO */
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+    .hero-content h2 {
+        font-size: 26px;
+    }
+
+    /* ABOUT */
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-image img {
+        max-width: 350px;
+        margin: 0 auto;
+    }
+
+    /* SERMONS */
+
+    .sermon-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+        padding: 0;
+    }
+
+    .sermon-item {
+        width: 100%;
+        max-width: 420px;
+        margin: 0 auto;
+    }
+
+    .search-bar input {
+        width: 90%;
+    }
+
+    /* FOOTER */
+
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

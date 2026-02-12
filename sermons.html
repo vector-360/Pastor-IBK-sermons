@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sermon Archive | Pastor IBK</title>
+
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<header>
+<nav class="navbar">
+<h1 class="logo">Pastor IBK</h1>
+
+<div class="menu-toggle" id="menu-toggle">
+<i class="fas fa-bars"></i>
+</div>
+
+<ul class="nav-links" id="nav-links">
+<li><a href="index.html">Home</a></li>
+<li><a href="sermons.html" class="active-link">Sermons</a></li>
+<li><a href="index.html#about">About</a></li>
+</ul>
+</nav>
+</header>
+
+<section class="sermons-page">
+
+<div class="sermon-header">
+<h2>Sermon Archive</h2>
+<p>Grow deeper through every message.</p>
+</div>
+
+<div class="search-bar">
+<input type="text" id="searchInput" placeholder="Search sermons...">
+</div>
+
+<div class="filter-buttons">
+<button class="filter-btn active" data-filter="all">All</button>
+<button class="filter-btn" data-filter="video">Video</button>
+<button class="filter-btn" data-filter="audio">Audio</button>
+</div>
+
+<div class="sermon-container">
+
+<div class="sermon-item video" data-title="Walking in Faith" data-tags="faith growth trust">
+<div class="media-wrapper">
+<iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+</div>
+<h3><a href="sermon-detail.html">Walking in Faith</a></h3>
+<p class="date">January 12, 2026</p>
+<div class="tags">
+<span>#Faith</span>
+<span>#Growth</span>
+</div>
+</div>
+
+<div class="sermon-item audio" data-title="The Power of Prayer" data-tags="prayer discipline">
+<h3><a href="sermon-detail.html">The Power of Prayer</a></h3>
+<p class="date">January 5, 2026</p>
+<audio controls>
+<source src="audio-sermon.mp3" type="audio/mpeg">
+</audio>
+<div class="tags">
+<span>#Prayer</span>
+<span>#Discipline</span>
+</div>
+</div>
+
+</div>
+</section>
+
+<footer class="footer">
+<div class="footer-container">
+<div>
+<h3>Pastor IBK</h3>
+<p>Preaching Christ. Transforming Lives.</p>
+</div>
+
+<div>
+<p><strong>Email:</strong> pastoribk@email.com</p>
+<p><strong>Phone:</strong> +234 XXX XXX XXXX</p>
+</div>
+
+<div class="footer-social">
+<a href="#"><i class="fab fa-facebook-f"></i></a>
+<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="#"><i class="fab fa-instagram"></i></a>
+</div>
+</div>
+
+<div class="footer-bottom">
+<p>© 2026 Pastor IBK. All Rights Reserved.</p>
+</div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
